@@ -1,0 +1,459 @@
+@font-face {
+	font-family: "Titulos";
+	src: url("/frontend/public/fonts/Exo-Light.otf");
+}
+@font-face {
+	font-family: "Parrafos";
+	src: url("/frontend/public/fonts/Exo-Light.otf")
+}
+@font-face {
+    font-family: 'Titulos-Bold';
+    src: url('/frontend/public/fonts/k');
+}
+:root {
+	--color-one: #FFFFFF;
+	--color-two: #F5F5F5;
+	--color-three: #343A40;
+	--color-four: #621132;
+	--color-six:#807E82;
+	--border-color-one: #D8D8D8;
+	--border-color-two: #E1E1E1;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	font-size: 1rem;
+	font-family: "Parrafos";
+	background-color: #FFFFFF;
+}
+/* estilos del index */
+.navbar {
+	height: 70px;
+	background-color: #621132;
+}
+
+.nav-link,
+.navbar-brand {
+	color: #F8F8F8;
+}
+.nav-link:hover,
+.navbar-brand:hover {
+	color: #b38e5d;
+}
+.border-negro {
+	border-bottom: 3px solid #706f6f;
+}
+.card:hover {
+	-webkit-box-shadow: 0 5px 8px 0 #d1d1d1;
+	box-shadow: 0 5px 8px 0 #621132;
+}
+.icono {
+	font-size: 4rem;
+	color: #621132;
+}
+
+.dec{
+    text-decoration: none;
+}
+/* ---------------------------------------
+MAS ESPACIO ENTRE LOS APARTADOS DEL HEADER
+------------------------------------------ */
+.nav-item {
+  margin-left: 17px;
+}
+
+/* ------------------------------------
+ESTILOS PARA EL BOTON DEL INICIAR SESION
+--------------------------------------- */
+.btn-ayuda {
+  background-color: #fff; /* Orange color */
+  color: #fff;
+  padding: 7px 14px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #10151a;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.btn-ayuda:hover {
+  background-color:#10151a;/* */
+  color:#fff;
+}
+
+.border-left {
+	border-left: 5px solid #13322B;
+}
+.titulos1 {
+	font-family: "Titulos";
+  color: #151717;
+}
+
+.titulos {
+	font-family: "Titulos";
+}
+.parrafos1{
+	font-family: "Parrafos";
+  color: #313131;
+}
+.parrafos1{
+	font-family: "Parrafos";
+  color: #313131;
+}
+
+.fs-7 {
+	font-size: 15px;
+}
+.color-tres {
+	color: #13322B;
+}
+p {
+	color: #706f6f;
+}
+.bg-cbta {
+	background-color: #13322B;
+}
+
+/* Controles del slider */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    z-index: 1;
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+.slide {
+  position: relative;
+}
+
+.prevBtn,
+.nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.prevBtn {
+  left: 10px;
+}
+
+.nextBtn {
+  right: 10px;
+}
+
+/* Contenido De Tramites Y Servicios */
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+ 
+.card:hover {
+  transform: scale(1.05);
+}
+.bg-contenido{
+  background-color: #f2f2f2;
+  box-shadow: #151717;
+}
+
+.cardContenido {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .cardContenido {
+  transform: rotateX(0deg);
+}
+
+.cardTitulo {
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+  font-weight: 700;
+}
+
+.cardDescripcion {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+/* Contenido de Acerca de */
+.process-step-style-01 .process-step-icon {
+    width: 130px;
+    height: 130px;
+    box-shadow: 0 0 10px rgba(0,0,0,.07);
+    line-height: 130px;
+    border-radius: 100%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    -ms-transition-duration: .5s
+}
+.process-step-style-01:hover .process-step-icon {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,.11);
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out
+}  
+
+/* Pagina de Ayuda*/
+.containerxd {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulxd{
+  font-weight: bold;
+  font-family: 'Titulos-Bold';
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  margin-top: 50px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.contacto {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.textocontacto {
+    font-weight: bold;
+    font-family: 'Titulos-Bold';
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.btn-contacto {
+    background-color: #10151a;
+    color: #fff;
+    padding: 7px 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 285px;
+    height: 40px;
+    align-items: center;
+}
+
+.btn-contacto:hover {
+    background-color: #0056b3;
+}
+
+.iconContacto{
+    font-weight: bold;
+    font-family: 'Titulos-Bold';
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #333;
+    margin-top: 20px;
+}
+  .iconTrabajar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 140px;
+    height: 140px;
+    text-align: center; 
+  }
+  
+.btn-whatsapp{
+    background-color: #10151a;
+    color: #fff;
+    padding: 7px 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 285px;
+    height: 40px;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Flooter */
+.redsocial {
+	font-size: 24px; /* Tamaño de fuente deseado */
+	margin-right: 10px; /* Margen derecho para separar los iconos */
+	color: #F8F8F8; /* Color de los iconos (puedes cambiarlo según tu diseño) */
+	text-decoration: none; /* Eliminar subrayado de los enlaces */
+}
+
+.full-box {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+.divider {
+	width: 95%;
+	margin: 0 auto;
+	border-top: 1px solid rgba(255,255,255,.2);
+}
+
+.bg-negro {
+	background-color: #313131;
+	color: #FFFFFF;
+}
+
+/* ==============
+Estilos del Login
+===============*/
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+background: #621132;
+  /*background: rgb(26, 10, 77);*/
+  /*background: linear-gradient(to right, rgb(221, 110, 188), rgb(116, 205, 235) );*/
+}
+
+.login-content {
+  width: 95%;
+  height: auto;
+  max-width: 600px;
+  border-radius: 15px;
+  padding: 35px  25px;
+  color: #ffffff;
+background-color: #ffffff;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  color: #151717;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #00bfff;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+  background-color: #151717;
+}
+
+.submit:hover {
+  background-color: #252727;
+}
+
+
+.danger {
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+  background-color: #d0442b;
+  text-decoration: none;
+}
+
+.danger:hover {
+  background-color: #d0442b;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
